@@ -5,7 +5,12 @@
     --color-title: #001A49;
 }
 
-img, .price__table, .cta, footer, .nav__title, .nav__link{
+img,
+.price__table,
+.cta,
+footer,
+.nav__title,
+.nav__link {
     user-select: none !important;
 }
 
@@ -493,14 +498,38 @@ footer {
 
 
 
+/* Scroll bar */
+
+body {
+    background-size: 100vh;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(148, 143, 143);
+    border-radius: 100vw;
+    border-right: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+
+
 /* Media queries */
 
-@media (max-width: 800px){
-    .nav__menu{
+@media (max-width: 800px) {
+    .nav__menu {
         display: block;
     }
 
-    .nav__link--menu{
+    .nav__link--menu {
         position: fixed;
         background-color: #000;
         top: 0;
@@ -517,13 +546,13 @@ footer {
         transition: .7s opacity;
     }
 
-    .nav__link--show{
+    .nav__link--show {
         --show: block;
         opacity: 1;
         pointer-events: unset;
     }
 
-    .nav__close{
+    .nav__close {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -531,146 +560,146 @@ footer {
         cursor: pointer;
     }
 
-    .hero__title{
+    .hero__title {
         font-size: 2.5rem;
     }
 
-    .about__main{
+    .about__main {
         gap: 2em;
     }
 
-    .about__icons:last-of-type{
+    .about__icons:last-of-type {
         grid-column: 1/-1;
     }
 
-    .knowledge__container{
+    .knowledge__container {
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
     }
 
-    .knowledge__picture{
+    .knowledge__picture {
         grid-row: 1/2;
         justify-self: center;
     }
 
-    .testimony__container{
+    .testimony__container {
         grid-template-columns: 30px 1fr 30px;
     }
 
-    .testimony__body{
+    .testimony__body {
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
         gap: 3em;
         justify-items: center;
     }
 
-    .testimony__img{
+    .testimony__img {
         width: 200px;
         height: 200px;
     }
 
-    .questions__copy{
+    .questions__copy {
         width: 100%;
     }
 
-    .footer__container{
+    .footer__container {
         flex-wrap: wrap;
     }
 
-    .nav--footer{
+    .nav--footer {
         width: 100%;
         justify-items: center;
     }
 
-    .nav__link--footer{
+    .nav__link--footer {
         width: 100%;
         justify-content: space-evenly;
         margin: 0;
     }
 
-    .footer__form{
+    .footer__form {
         width: 100%;
         justify-content: center;
     }
 
-    .footer__input{
+    .footer__input {
         flex: 1;
     }
 }
 
-@media (max-width: 600px){
-    .hero__title{
+@media (max-width: 600px) {
+    .hero__title {
         font-size: 2rem;
     }
 
-    .hero__paragraph{
+    .hero__paragraph {
         font-size: 1rem;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 1.8rem;
     }
 
-    .price__element{
+    .price__element {
         width: 90%;
     }
 
-    .price__element--best{
+    .price__element--best {
         width: 90%;
         padding: 40px;
     }
 
-    .price__price{
+    .price__price {
         font-size: 2rem;
     }
 
-    .testimony{
+    .testimony {
         --padding-container: 60px 0;
     }
 
-    .testimony__container{
+    .testimony__container {
         grid-template-columns: 28px 1fr 28px;
         gap: .9em;
     }
 
-    .testimony__arrow{
+    .testimony__arrow {
         width: 100%;
     }
 
-    .testimony__course{
+    .testimony__course {
         margin-top: 15px;
     }
 
-    .questions__title{
+    .questions__title {
         font-size: 1rem;
     }
 
-    .questions__title{
+    .questions__title {
         justify-self: start;
         margin-bottom: 15px;
     }
 
-    .nav__footer{
+    .nav__footer {
         padding-bottom: 60px;
     }
 
-    .nav__link--footer{
+    .nav__link--footer {
         justify-content: space-between;
     }
 
-    .footer__inputs{
+    .footer__inputs {
         flex-wrap: wrap;
     }
 
-    .footer__input{
+    .footer__input {
         flex-basis: 100%;
         margin: 0;
         margin-bottom: 16px;
     }
 
-    .footer__submit{
+    .footer__submit {
         margin-left: 0;
         width: 100%;
 
